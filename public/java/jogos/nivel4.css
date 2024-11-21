@@ -1,0 +1,219 @@
+:root[data-theme="light"] {
+    --primary-bg: #ffffff;
+    --secondary-bg: #f8f9fa;
+    --text-primary: #2c3e50;
+    --text-secondary: #6c757d;
+    --accent-orange: #f89820;
+    --accent-blue: #5382a1;
+    --button-hover: #e67e00;
+    --correct-answer: #28a745;
+    --wrong-answer: #dc3545;
+    --nav-bg: rgba(255, 255, 255, 0.9);
+    --code-bg: #f8f9fa;
+    --border-color: #dee2e6;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+:root[data-theme="dark"] {
+    --primary-bg: #1a1a1a;
+    --secondary-bg: #2d2d2d;
+    --text-primary: #ffffff;
+    --text-secondary: #cccccc;
+    --accent-orange: #ff9933;
+    --accent-blue: #6699cc;
+    --button-hover: #ff8000;
+    --correct-answer: #198754;
+    --wrong-answer: #dc3545;
+    --nav-bg: rgba(26, 26, 26, 0.9);
+    --code-bg: #2d2d2d;
+    --border-color: #444444;
+    --shadow-color: rgba(0, 0, 0, 0.3);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--primary-bg);
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: var(--nav-bg);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    box-shadow: 0 2px 10px var(--shadow-color);
+}
+
+.nav-logo span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: linear-gradient(45deg, var(--accent-orange), var(--accent-blue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
+
+.theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--accent-orange);
+    font-size: 1.2rem;
+    padding: 0.5rem;
+}
+
+.container {
+    max-width: 800px;
+    margin: 80px auto 2rem;
+    padding: 2rem;
+}
+
+.intro-section, .quiz-section {
+    background: var(--secondary-bg);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px var(--shadow-color);
+}
+
+.intro-content {
+    margin: 2rem 0;
+}
+
+.intro-content ul {
+    margin: 1rem 0;
+    padding-left: 2rem;
+}
+
+.intro-content pre {
+    background: var(--code-bg);
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 1rem 0;
+    overflow-x: auto;
+}
+
+code {
+    background: var(--code-bg);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+.start-quiz {
+    background: var(--accent-orange);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    width: 100%;
+    margin-top: 2rem;
+    transition: background-color 0.3s;
+}
+
+.start-quiz:hover {
+    background: var(--button-hover);
+}
+
+.question-container {
+    margin-top: 2rem;
+}
+
+.question {
+    margin-bottom: 2rem;
+}
+
+.question h3 {
+    margin-bottom: 1rem;
+}
+
+.options {
+    display: grid;
+    gap: 1rem;
+}
+
+.option {
+    background: var(--secondary-bg);
+    border: 1px solid var(--border-color);
+    padding: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.option:hover {
+    background: var(--accent-orange);
+    color: white;
+}
+
+.option.correct {
+    background: var(--correct-answer);
+    color: white;
+}
+
+.option.wrong {
+    background: var(--wrong-answer);
+    color: white;
+}
+
+.result-container {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 2rem;
+    border-radius: 10px;
+    background: var(--secondary-bg);
+}
+
+.result-container h3 {
+    margin-bottom: 1rem;
+}
+
+.result-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.result-actions button {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: var(--accent-blue);
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.result-actions button:hover {
+    background: var(--accent-orange);
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    .intro-section, .quiz-section {
+        padding: 1rem;
+    }
+}

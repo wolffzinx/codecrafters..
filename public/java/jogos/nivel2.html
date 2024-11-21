@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeCrafters - Quiz Java POO</title>
+    <link rel="stylesheet" href="nivel2.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-logo" onclick="window.location.href='/public/select-language.html'">
+            <span>CodeCrafters</span>
+        </div>
+        <div class="nav-controls">
+            <button class="theme-toggle" id="theme-toggle">
+                <i class="fas fa-sun"></i>
+            </button>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Seção de Introdução -->
+        <div class="intro-section">
+            <h2>Variáveis e Tipos em Java</h2>
+            <div class="intro-content">
+                <p>Em Java, toda variável tem um tipo específico que determina que tipo de dado ela pode armazenar. Os tipos mais comuns são:</p>
+                <ul>
+                    <li><strong>int:</strong> números inteiros (ex: 1, -5, 1000)</li>
+                    <li><strong>double:</strong> números decimais (ex: 3.14, -2.5)</li>
+                    <li><strong>String:</strong> texto (ex: "Olá mundo")</li>
+                    <li><strong>boolean:</strong> verdadeiro ou falso (true/false)</li>
+                    <li><strong>char:</strong> caractere único (ex: 'a', '1', '$')</li>
+                </ul>
+                <p>Para declarar uma variável, use a sintaxe: <code>tipo nomeVariavel = valor;</code></p>
+                <p>Exemplos:</p>
+                <pre>
+int idade = 25;
+double altura = 1.75;
+String nome = "João";
+boolean estudante = true;
+char letra = 'A';</pre>
+                <p>Lembre-se:</p>
+                <ul>
+                    <li>Strings usam aspas duplas (" ")</li>
+                    <li>char usa aspas simples (' ')</li>
+                    <li>Números decimais usam ponto, não vírgula</li>
+                    <li>Nomes de variáveis não podem começar com números</li>
+                </ul>
+            </div>
+            <button class="start-quiz">Começar Quiz</button>
+        </div>
+
+        <!-- Seção do Quiz (inicialmente escondida) -->
+        <div class="quiz-section hidden">
+            <h2>Quiz - Variáveis e Tipos</h2>
+            <div class="question-container">
+                <!-- Perguntas serão inseridas aqui -->
+            </div>
+            <div class="result-container hidden">
+                <!-- Resultado será mostrado aqui -->
+            </div>
+        </div>
+    </div>
+
+    <script src="nivel2.js"></script>
+</body>
+</html>

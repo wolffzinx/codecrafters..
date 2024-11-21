@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeCrafters - Java Fundamentos</title>
+    <link rel="stylesheet" href="nivel1.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-logo" onclick="window.location.href='/public/select-language.html'">
+            <span>CodeCrafters</span>
+        </div>
+        <div class="nav-controls">
+            <button class="theme-toggle" id="theme-toggle">
+                <i class="fas fa-sun"></i>
+            </button>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Painel de Instruções -->
+        <div class="panel instructions">
+            <h2>Fundamentos Java - Nível 1</h2>
+            <div class="content">
+                <div class="lesson-content">
+                    <!-- Conteúdo dinâmico será inserido aqui -->
+                </div>
+                <div class="hints-section">
+                    <button class="hint-btn">Mostrar Dicas</button>
+                    <div class="hints">
+                        <!-- Dicas serão inseridas aqui -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Console de Código -->
+        <div class="panel code-console">
+            <div class="editor-header">
+                <span>Código</span>
+                <button class="run-btn">Executar <i class="fas fa-play"></i></button>
+            </div>
+            <div class="editor" id="editor"></div>
+        </div>
+
+        <!-- Painel de Saída -->
+        <div class="panel output">
+            <h3>Output</h3>
+            <div class="output-content">
+                <pre id="output-text"></pre>
+            </div>
+            <div class="button-container">
+                <button class="next-btn hidden">Próximo Nível</button>
+                <button class="menu-btn hidden">Voltar ao Menu</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <script src="nivel1.js"></script>
+</body>
+</html>

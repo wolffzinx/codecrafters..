@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeCrafters - Java Journey</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Partículas de Background -->
+    <div id="particles-js"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-logo" onclick="window.location.href='/public/select-language.html'">
+            <span>CodeCrafters</span>
+        </div>
+        
+        <div class="nav-controls">
+            <button class="theme-toggle" id="theme-toggle">
+                <i class="fas fa-sun"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="coffee-cup">
+            <div class="steam"></div>
+            <div class="steam"></div>
+            <div class="steam"></div>
+        </div>
+        <h1>Jornada Java</h1>
+        <p>Desenvolva suas habilidades em Java através de desafios práticos</p>
+    </div>
+
+    <!-- Fases -->
+    <div class="container">
+        <div class="phases-grid">
+            <div class="phase-card" onclick="window.location.href='jogos/nivel1.html'">
+                <div class="phase-content">
+                    <div class="phase-number">01</div>
+                    <h3>Fundamentos Java</h3>
+                    <p>Variáveis, loops, condicionais e arrays</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 100%"></div>
+                    </div>
+                    <div class="card-decoration">
+                        <i class="fas fa-coffee"></i>
+                    </div>
+                </div>
+                <div class="hover-effect"></div>
+            </div>
+
+            <div class="phase-card" onclick="window.location.href='jogos/nivel2.html'">
+                <div class="phase-content">
+                    <div class="phase-number">02</div>
+                    <h3>POO Básico</h3>
+                    <p>Classes, objetos e encapsulamento</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 100%"></div>
+                    </div>
+                    <div class="card-decoration">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                </div>
+                <div class="hover-effect"></div>
+            </div>
+
+            <div class="phase-card" onclick="window.location.href='jogos/nivel3.html'">
+                <div class="phase-content">
+                    <div class="phase-number">03</div>
+                    <h3>Herança & Polimorfismo</h3>
+                    <p>Hierarquia de classes e interfaces</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 100%"></div>
+                    </div>
+                    <div class="card-decoration">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                </div>
+                <div class="hover-effect"></div>
+            </div>
+
+            <div class="phase-card" onclick="window.location.href='jogos/nivel4.html'">
+                <div class="phase-content">
+                    <div class="phase-number">04</div>
+                    <h3>Collections & Exceptions</h3>
+                    <p>Estruturas de dados e tratamento de erros</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 100%"></div>
+                    </div>
+                    <div class="card-decoration">
+                        <i class="fas fa-database"></i>
+                    </div>
+                </div>
+                <div class="hover-effect"></div>
+            </div>
+
+            <div class="phase-card" onclick="window.location.href='jogos/nivel5.html'">
+                <div class="phase-content">
+                    <div class="phase-number">05</div>
+                    <h3>Objetos</h3>
+                    <p>Mergulhe na programação orientada a objetos com Java</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 100%"></div>
+                    </div>
+                    <div class="card-decoration">
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="hover-effect"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
